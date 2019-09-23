@@ -524,7 +524,7 @@ class Model(object):
         # already done
         atm = hazel.util.lower_dict_keys(atmosphere)
 
-        SIR_atmosphere.list_lines() #Mark Cheung
+        print(SIR_atmosphere.list_lines()) #Mark Cheung
         self.atmospheres[atm['name']] = SIR_atmosphere(working_mode=self.working_mode, name=atm['name'])
         lines = [int(k) for k in list(atm['spectral lines'])]
 
